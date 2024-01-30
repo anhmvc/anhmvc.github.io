@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   height: 100%;
   position: absolute;
-  white-space: pre;
   width: 100%;
 }
 
