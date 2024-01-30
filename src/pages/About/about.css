@@ -1,0 +1,31 @@
+.about {
+  padding: 300px 144px;
+  flex-direction: row;
+}
+
+.about-title {
+  margin: 0;
+}
+
+.paragraph {
+  width: 80%;
+  color: #000;
+  font-family: Epilogue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.inner-container {
+  display: inline-flex;
+  width: 75%;
+}
+
+.photo {
+  width: 300px;
+  height: 350px;
+  flex-shrink: 0;
+  background: var(--Pink);
+  border-radius: 50px;
+}
