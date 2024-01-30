@@ -7,9 +7,6 @@ import noise from "../../static/images/noise.png";
 export default function Home() {
   return (
     <div className="homepage-container">
-      {/* <div className="navbar">
-        <img src={menu} alt="menu" />
-      </div> */}
       <div className="intro-container">
         <div className="intro">
           <h1 className="intro" id="intro-text">
