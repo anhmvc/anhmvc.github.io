@@ -14,6 +14,12 @@ export default function Work() {
       links: ["github"],
     },
     {
+      title: "Keep Shopping For",
+      subtitle: "Full Stack Development, Front-End Development",
+      tech: ["Typescript", "React.js", "React Native", "API Development"],
+      links: [],
+    },
+    {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
       tech: ["Javascript", "React.js", "Web Development", "API Development"],
@@ -38,7 +44,7 @@ export default function Work() {
       links: ["figma"],
     },
     {
-      title: "FLUX",
+      title: "FLUX (Flipped UX)",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
       links: ["figma"],
