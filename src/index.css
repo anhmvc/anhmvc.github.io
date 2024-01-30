@@ -7,3 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
+.page-container {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  padding: 50px 50px 0;
+}
+
+.title {
+  color: #000;
+  font-family: Epilogue;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 50px;
+  margin-top: 50px;
+}

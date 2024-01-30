@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import rightArc from "../../static/icons/right-arc.svg";
 import open from "../../static/icons/open.svg";
 import close from "../../static/icons/close.svg";
-import noise from "../../static/images/noise.png";
 
 export default function Menu() {
   const [showMenu, setShowMenu] = useState(false);
