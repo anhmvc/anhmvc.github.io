@@ -1,6 +1,5 @@
 import "./home.css";
 import leftCircle from "../../static/icons/left-circle.svg";
-// import menu from "../../static/icons/menu.svg";
 import rightCircle from "../../static/icons/right-circle.svg";
 import noise from "../../static/images/noise.png";
 

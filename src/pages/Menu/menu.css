@@ -49,7 +49,7 @@ h2.links {
 
 .content {
   align-items: center;
-  animation: gradient 10s ease infinite;
+  animation: gradient 5s ease infinite;
   background: linear-gradient(
     111deg,
     #94f8ca 17.65%,
@@ -60,13 +60,15 @@ h2.links {
   );
   background-size: 200% 200%;
   display: flex;
-  width: 100%;
   height: 100%;
   justify-content: center;
-  -webkit-animation: gradient 10s ease infinite;
+  opacity: 0;
+  -webkit-animation: gradient 5s ease infinite;
+  width: 100%;
+  transition: 0.3s ease-out;
 }
 
-.content_inactive {
+.content-inactive {
   opacity: 0;
 }
 
