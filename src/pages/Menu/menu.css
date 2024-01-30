@@ -70,6 +70,7 @@ h2.links {
 
 .content-inactive {
   opacity: 0;
+  pointer-events: none;
 }
 
 .content-active {
