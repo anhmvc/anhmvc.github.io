@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --Green: #94f8ca;
+  --Purple: #b6bef4;
+  --Teal: #8ae8e1;
+  --Pink: #f9c3c2;
+  --Yellow: #f5eeb3;
+}
+
 body {
   font-family: "Epilogue", "Inter";
   margin: 0;

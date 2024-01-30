@@ -15,7 +15,7 @@ export default function Card(props: {
   return (
     <div
       className="card-container"
-      // style={{ backgroundColor: props.backgroundColor }}
+      style={{ backgroundColor: `var(--${props.backgroundColor})` }}
     >
       <div className="title-container">
         <div>

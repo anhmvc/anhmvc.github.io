@@ -4,6 +4,7 @@ import "./work.css";
 import { Card } from "../../components";
 
 export default function Work() {
+  const COLORS = ["Green", "Teal", "Purple", "Pink", "Yellow"];
   const PROJECTS = [
     {
       title: "Royce Hall Simulator",
@@ -16,35 +17,30 @@ export default function Work() {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
       tech: ["Javascript", "React.js", "Web Development", "API Development"],
-      backgroundColor: "Teal",
       links: ["github"],
     },
     {
       title: "Saru Recycling",
       subtitle: "Web/Mobile Development, UX/UI Design",
       tech: ["Javascript", "React.js", "React Native", "Firebase", "Figma"],
-      backgroundColor: "Teal",
       links: ["github", "figma"],
     },
     {
       title: "The MET Explorer",
       subtitle: "Data Science",
       tech: ["Python", "Jupyter Notebook", "Tableau"],
-      backgroundColor: "Teal",
       links: ["github"],
     },
     {
       title: "Code Connects",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
-      backgroundColor: "Teal",
       links: ["figma"],
     },
     {
       title: "FLUX",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
-      backgroundColor: "Teal",
       links: ["figma"],
     },
   ];
@@ -59,7 +55,7 @@ export default function Work() {
                 title={project.title}
                 subtitle={project.subtitle}
                 tech={project.tech}
-                backgroundColor={project.backgroundColor}
+                backgroundColor={COLORS[index % 5]}
                 links={project.links}
               />
             </div>
