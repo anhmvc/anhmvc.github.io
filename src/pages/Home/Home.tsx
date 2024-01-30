@@ -2,6 +2,7 @@ import "./home.css";
 import leftCircle from "../../static/icons/left-circle.svg";
 import rightCircle from "../../static/icons/right-circle.svg";
 import noise from "../../static/images/noise.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -22,14 +23,18 @@ export default function Home() {
       <div className="intro-links">
         <div className="intro-sublinks">
           <img src={leftCircle} alt="left-arrow" />
-          <h3 className="intro">
-            read <b>about</b> me
-          </h3>
+          <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
+            <h3 className="intro">
+              read <b>about</b> me
+            </h3>
+          </Link>
         </div>
         <div className="intro-sublinks">
-          <h3 className="intro">
-            see my <b>work</b>
-          </h3>
+          <Link to="/work" style={{ textDecoration: "none", color: "black" }}>
+            <h3 className="intro">
+              see my <b>work</b>
+            </h3>
+          </Link>
           <img src={rightCircle} alt="right-arrow" />
         </div>
       </div>
