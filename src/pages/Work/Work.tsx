@@ -52,7 +52,7 @@ export default function Work() {
   ];
   return (
     <div className="page-container">
-      <h1 className="title">work</h1>
+      <h1 className="title work">work</h1>
       <div className="cards-container">
         {PROJECTS.map((project, index) => {
           return (
@@ -67,6 +67,15 @@ export default function Work() {
             </div>
           );
         })}
+        <div style={{ opacity: 0 }} className="card">
+          <Card
+            title=""
+            subtitle=""
+            tech={[""]}
+            backgroundColor=""
+            links={[""]}
+          />
+        </div>
       </div>
     </div>
   );

@@ -42,7 +42,7 @@ h2.links {
   display: flex;
   height: 100%;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 9998;
 }
