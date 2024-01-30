@@ -51,17 +51,21 @@ export default function Work() {
   return (
     <div className="page-container">
       <h1 className="title">work</h1>
-      {PROJECTS.map((project) => {
-        return (
-          <Card
-            title={project.title}
-            subtitle={project.subtitle}
-            tech={project.tech}
-            backgroundColor={project.backgroundColor}
-            links={project.links}
-          />
-        );
-      })}
+      <div className="cards-container">
+        {PROJECTS.map((project, index) => {
+          return (
+            <div style={{ zIndex: index }} className="card">
+              <Card
+                title={project.title}
+                subtitle={project.subtitle}
+                tech={project.tech}
+                backgroundColor={project.backgroundColor}
+                links={project.links}
+              />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
