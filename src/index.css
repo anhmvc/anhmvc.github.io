@@ -11,18 +11,20 @@
 body {
   font-family: "Epilogue", "Inter";
   margin: 0;
-  /* overflow: hidden; */
+  padding: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
 }
 
 .page-container {
   display: flex;
-  height: 100vh;
-  position: absolute;
-  width: 100vw;
-  padding: 50px 100px 0;
   flex-direction: column;
+  height: 100%;
+  position: absolute;
+  white-space: pre;
+  width: 100%;
 }
 
 .title {
