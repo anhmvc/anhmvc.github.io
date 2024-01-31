@@ -14,7 +14,7 @@ export default function Menu() {
   }
 
   return (
-    <div className={`menu-container ${showMenu ? "" : "inactive"}`}>
+    <div>
       <div className="control-button">
         <img
           src={showMenu ? close : open}
@@ -22,42 +22,49 @@ export default function Menu() {
           onClick={toggleMenu}
         />
       </div>
-      <div
-        className={`content ${
-          showMenu ? "content-active" : "content-inactive"
-        }`}
-      >
-        <div className="text-container">
-          <Link to="/" className="text-item" id="home" onClick={toggleMenu}>
-            home
-          </Link>
-          <Link to="/work" className="text-item" id="work" onClick={toggleMenu}>
-            work
-          </Link>
-          <Link
-            to="/about"
-            className="text-item"
-            id="about"
-            onClick={toggleMenu}
-          >
-            about
-          </Link>
-          <Link
-            to="/contact"
-            className="text-item"
-            id="contact"
-            onClick={toggleMenu}
-          >
-            contact
-          </Link>
-          <div className="links-container">
-            <div className="links">
-              <h2 className="links">linkedin</h2>
-              <img className="links" src={rightArc} alt="right-arrow" />
-            </div>
-            <div className="links">
-              <h2 className="links">github</h2>
-              <img className="links" src={rightArc} alt="right-arrow" />
+      <div className={`menu-container ${showMenu ? "" : "inactive"}`}>
+        <div
+          className={`content ${
+            showMenu ? "content-active" : "content-inactive"
+          }`}
+        >
+          <div className="text-container">
+            <Link to="/" className="text-item" id="home" onClick={toggleMenu}>
+              home
+            </Link>
+            <Link
+              to="/work"
+              className="text-item"
+              id="work"
+              onClick={toggleMenu}
+            >
+              work
+            </Link>
+            <Link
+              to="/about"
+              className="text-item"
+              id="about"
+              onClick={toggleMenu}
+            >
+              about
+            </Link>
+            <Link
+              to="/contact"
+              className="text-item"
+              id="contact"
+              onClick={toggleMenu}
+            >
+              contact
+            </Link>
+            <div className="links-container">
+              <div className="links">
+                <h2 className="links">linkedin</h2>
+                <img className="links" src={rightArc} alt="right-arrow" />
+              </div>
+              <div className="links">
+                <h2 className="links">github</h2>
+                <img className="links" src={rightArc} alt="right-arrow" />
+              </div>
             </div>
           </div>
         </div>

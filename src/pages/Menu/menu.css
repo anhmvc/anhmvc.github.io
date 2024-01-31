@@ -1,5 +1,5 @@
 .control-button {
-  position: absolute;
+  position: fixed;
   top: 50px;
   right: 50px;
   filter: invert(99%) sepia(1%) saturate(4%) hue-rotate(329deg) brightness(107%)
