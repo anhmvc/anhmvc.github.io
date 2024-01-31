@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./work.css";
 
 import { Card } from "../../components";
 
 export default function Work() {
+  const [isHover, setHover] = useState(false);
+  const [hoverItem, setHoverItem] = useState(-1);
+
   const COLORS = ["Green", "Teal", "Purple", "Pink", "Yellow"];
   const PROJECTS = [
     {
@@ -66,31 +69,55 @@ export default function Work() {
       links: new Map<string, string>([["figma", "figma"]]),
     },
   ];
+
+  function handleHover(i: number) {
+    setHover(i > -1 ? true : false);
+    setHoverItem(i);
+  }
+
   return (
     <div className="page-container">
       <h1 className="title work-title">work</h1>
-      <div className="cards-container">
-        {PROJECTS.map((project, index) => {
-          return (
-            <div style={{ zIndex: index }} className="card-container">
-              <Card
-                title={project.title}
-                subtitle={project.subtitle}
-                tech={project.tech}
-                backgroundColor={COLORS[index % 5]}
-                links={project.links}
+      <div className="projects">
+        <div className="cards-container">
+          {PROJECTS.map((project, index) => {
+            return (
+              <div
+                style={{ zIndex: index }}
+                className="card-container"
+                onMouseEnter={() => handleHover(index)}
+                onMouseLeave={() => handleHover(-1)}
+              >
+                <Card
+                  title={project.title}
+                  subtitle={project.subtitle}
+                  tech={project.tech}
+                  backgroundColor={COLORS[index % 5]}
+                  links={project.links}
+                />
+              </div>
+            );
+          })}
+          <div style={{ opacity: 0 }} className="card-container">
+            <Card
+              title=""
+              subtitle=""
+              tech={[""]}
+              backgroundColor=""
+              links={new Map<string, string>()}
+            />
+          </div>
+        </div>
+        <div className="project-images-container">
+          {isHover ? (
+            <div className="project-image">
+              <img
+                className="project-image"
+                src={PROJECTS[hoverItem].img}
+                alt={PROJECTS[hoverItem].title}
               />
             </div>
-          );
-        })}
-        <div style={{ opacity: 0 }} className="card-container">
-          <Card
-            title=""
-            subtitle=""
-            tech={[""]}
-            backgroundColor=""
-            links={new Map<string, string>()}
-          />
+          ) : null}
         </div>
       </div>
     </div>
