@@ -9,10 +9,11 @@ import met from "../../static/images/met.png";
 import saru from "../../static/images/saru.png";
 import solar from "../../static/images/solar.gif";
 import flux from "../../static/images/flux.gif";
+import code from "../../static/images/code-connects.png";
 
 export default function Work() {
-  const [isHover, setHover] = useState(true);
-  const [hoverItem, setHoverItem] = useState(0);
+  const [isHover, setHover] = useState(false);
+  const [hoverItem, setHoverItem] = useState(-1);
 
   const COLORS = ["Green", "Teal", "Purple", "Pink", "Yellow"];
   const PROJECTS = [
@@ -30,7 +31,7 @@ export default function Work() {
     //   title: "Keep Shopping For",
     //   subtitle: "Full Stack Development, Front-End Development",
     //   tech: ["Typescript", "React.js", "React Native", "API Development"],
-    //   links: new Map<string, string>([]),
+    //   links: new Map<string, string>(["website","https://www.amazon.com"]),
     //   img: "",
     // },
     {
@@ -63,23 +64,28 @@ export default function Work() {
       ]),
       img: met,
     },
-    // {
-    //   title: "Code Connects",
-    //   subtitle: "UX/UI Design",
-    //   tech: ["Figma"],
-    //   links: new Map<string, string>([
-    //     [
-    //       "figma",
-    //       "https://www.figma.com/file/x9uSlKCqGt2z7yIVAuWQwq/CodeConnects-Student-Portal?type=design&mode=design&t=YPJclAjHmikwh1SZ-1",
-    //     ],
-    //   ]),
-    //   img: "",
-    // },
+    {
+      title: "Code Connects",
+      subtitle: "UX/UI Design",
+      tech: ["Figma"],
+      links: new Map<string, string>([
+        [
+          "figma",
+          "https://www.figma.com/file/x9uSlKCqGt2z7yIVAuWQwq/CodeConnects-Student-Portal?type=design&mode=design&t=YPJclAjHmikwh1SZ-1",
+        ],
+      ]),
+      img: code,
+    },
     {
       title: "FLUX (Flipped UX)",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
-      links: new Map<string, string>([["figma", "figma"]]),
+      links: new Map<string, string>([
+        [
+          "figma",
+          "https://www.figma.com/file/WDWXIQHBTCNcrm7Uw0qSjO/FLUX-(Flipped-UX)?type=design&node-id=0%3A1&mode=design&t=JdtEayZGqwAj2kxU-1",
+        ],
+      ]),
       img: flux,
     },
     {
