@@ -6,7 +6,7 @@
   margin-left: 100px;
 }
 
-.card {
+.card-container {
   position: sticky;
   top: 220px;
 }

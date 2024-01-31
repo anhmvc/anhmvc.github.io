@@ -56,7 +56,7 @@ export default function Work() {
       <div className="cards-container">
         {PROJECTS.map((project, index) => {
           return (
-            <div style={{ zIndex: index }} className="card">
+            <div style={{ zIndex: index }} className="card-container">
               <Card
                 title={project.title}
                 subtitle={project.subtitle}
@@ -67,7 +67,7 @@ export default function Work() {
             </div>
           );
         })}
-        <div style={{ opacity: 0 }} className="card">
+        <div style={{ opacity: 0 }} className="card-container">
           <Card
             title=""
             subtitle=""
