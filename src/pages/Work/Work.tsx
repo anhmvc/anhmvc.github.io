@@ -3,9 +3,16 @@ import "./work.css";
 
 import { Card } from "../../components";
 
+import royce from "../../static/images/royce-hall.gif";
+import twain from "../../static/images/twain.png";
+import met from "../../static/images/met.png";
+import saru from "../../static/images/saru.png";
+import solar from "../../static/images/solar.gif";
+import flux from "../../static/images/flux.gif";
+
 export default function Work() {
-  const [isHover, setHover] = useState(false);
-  const [hoverItem, setHoverItem] = useState(-1);
+  const [isHover, setHover] = useState(true);
+  const [hoverItem, setHoverItem] = useState(0);
 
   const COLORS = ["Green", "Teal", "Purple", "Pink", "Yellow"];
   const PROJECTS = [
@@ -17,15 +24,15 @@ export default function Work() {
       links: new Map<string, string>([
         ["github", "https://github.com/anhmvc/royce-hall"],
       ]),
-      img: "",
+      img: royce,
     },
-    {
-      title: "Keep Shopping For",
-      subtitle: "Full Stack Development, Front-End Development",
-      tech: ["Typescript", "React.js", "React Native", "API Development"],
-      links: new Map<string, string>([]),
-      img: "",
-    },
+    // {
+    //   title: "Keep Shopping For",
+    //   subtitle: "Full Stack Development, Front-End Development",
+    //   tech: ["Typescript", "React.js", "React Native", "API Development"],
+    //   links: new Map<string, string>([]),
+    //   img: "",
+    // },
     {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
@@ -33,7 +40,7 @@ export default function Work() {
       links: new Map<string, string>([
         ["github", "https://github.com/ucladevx/twain-extension"],
       ]),
-      img: "",
+      img: twain,
     },
     {
       title: "Saru Recycling",
@@ -45,7 +52,7 @@ export default function Work() {
           "https://www.figma.com/file/acMKWyawN9na4h0QR50ljS/Saru-Web-Development?type=design&node-id=0%3A1&mode=design&t=YPJclAjHmikwh1SZ-1",
         ],
       ]),
-      img: "",
+      img: saru,
     },
     {
       title: "The MET Explorer",
@@ -54,26 +61,35 @@ export default function Work() {
       links: new Map<string, string>([
         ["website", "https://dh101metexploration.humspace.ucla.edu/"],
       ]),
-      img: "",
+      img: met,
     },
-    {
-      title: "Code Connects",
-      subtitle: "UX/UI Design",
-      tech: ["Figma"],
-      links: new Map<string, string>([
-        [
-          "figma",
-          "https://www.figma.com/file/x9uSlKCqGt2z7yIVAuWQwq/CodeConnects-Student-Portal?type=design&mode=design&t=YPJclAjHmikwh1SZ-1",
-        ],
-      ]),
-      img: "",
-    },
+    // {
+    //   title: "Code Connects",
+    //   subtitle: "UX/UI Design",
+    //   tech: ["Figma"],
+    //   links: new Map<string, string>([
+    //     [
+    //       "figma",
+    //       "https://www.figma.com/file/x9uSlKCqGt2z7yIVAuWQwq/CodeConnects-Student-Portal?type=design&mode=design&t=YPJclAjHmikwh1SZ-1",
+    //     ],
+    //   ]),
+    //   img: "",
+    // },
     {
       title: "FLUX (Flipped UX)",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
       links: new Map<string, string>([["figma", "figma"]]),
-      img: "",
+      img: flux,
+    },
+    {
+      title: "Solar System Simulation",
+      subtitle: "Computer Graphics",
+      tech: ["Javascript", "three.js"],
+      links: new Map<string, string>([
+        ["github", "https://github.com/anhmvc/solar-system"],
+      ]),
+      img: solar,
     },
   ];
 
