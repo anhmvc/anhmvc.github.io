@@ -14,7 +14,7 @@ export default function Menu() {
   }
 
   return (
-    <div className="menu-container">
+    <div className={`menu-container ${showMenu ? "" : "inactive"}`}>
       <div className="control-button">
         <img
           src={showMenu ? close : open}
