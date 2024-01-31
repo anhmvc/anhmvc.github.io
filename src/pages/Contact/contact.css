@@ -1,0 +1,30 @@
+.contact-title {
+  margin-top: 220px;
+  margin-left: 100px;
+  margin-bottom: 0;
+}
+
+.head-separator {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.contact-container {
+  padding: 30px 100px;
+  display: flex;
+}
+
+.contact-left {
+  width: 80%;
+}
+
+.contact-right {
+  width: 100%;
+}
+
+.contact-right a,
+h1 {
+  text-decoration: none;
+  color: black;
+}

@@ -17,12 +17,14 @@ export default function Work() {
       links: new Map<string, string>([
         ["github", "https://github.com/anhmvc/royce-hall"],
       ]),
+      img: "",
     },
     {
       title: "Keep Shopping For",
       subtitle: "Full Stack Development, Front-End Development",
       tech: ["Typescript", "React.js", "React Native", "API Development"],
       links: new Map<string, string>([]),
+      img: "",
     },
     {
       title: "Twain",
@@ -31,6 +33,7 @@ export default function Work() {
       links: new Map<string, string>([
         ["github", "https://github.com/ucladevx/twain-extension"],
       ]),
+      img: "",
     },
     {
       title: "Saru Recycling",
@@ -42,6 +45,7 @@ export default function Work() {
           "https://www.figma.com/file/acMKWyawN9na4h0QR50ljS/Saru-Web-Development?type=design&node-id=0%3A1&mode=design&t=YPJclAjHmikwh1SZ-1",
         ],
       ]),
+      img: "",
     },
     {
       title: "The MET Explorer",
@@ -50,6 +54,7 @@ export default function Work() {
       links: new Map<string, string>([
         ["website", "https://dh101metexploration.humspace.ucla.edu/"],
       ]),
+      img: "",
     },
     {
       title: "Code Connects",
@@ -61,12 +66,14 @@ export default function Work() {
           "https://www.figma.com/file/x9uSlKCqGt2z7yIVAuWQwq/CodeConnects-Student-Portal?type=design&mode=design&t=YPJclAjHmikwh1SZ-1",
         ],
       ]),
+      img: "",
     },
     {
       title: "FLUX (Flipped UX)",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
       links: new Map<string, string>([["figma", "figma"]]),
+      img: "",
     },
   ];
 
