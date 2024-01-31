@@ -11,43 +11,59 @@ export default function Work() {
       subtitle: "Computer Graphics, 3D Modeling",
       tech: ["Javascript", "three.js", "Blender"],
       backgroundColor: "Teal",
-      links: ["github"],
+      links: new Map<string, string>([
+        ["github", "https://github.com/anhmvc/royce-hall"],
+      ]),
     },
     {
       title: "Keep Shopping For",
       subtitle: "Full Stack Development, Front-End Development",
       tech: ["Typescript", "React.js", "React Native", "API Development"],
-      links: [],
+      links: new Map<string, string>([]),
     },
     {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
       tech: ["Javascript", "React.js", "Web Development", "API Development"],
-      links: ["github"],
+      links: new Map<string, string>([
+        ["github", "https://github.com/ucladevx/twain-extension"],
+      ]),
     },
     {
       title: "Saru Recycling",
       subtitle: "Web/Mobile Development, UX/UI Design",
       tech: ["Javascript", "React.js", "React Native", "Firebase", "Figma"],
-      links: ["github", "figma"],
+      links: new Map<string, string>([
+        [
+          "figma",
+          "https://www.figma.com/file/acMKWyawN9na4h0QR50ljS/Saru-Web-Development?type=design&node-id=0%3A1&mode=design&t=YPJclAjHmikwh1SZ-1",
+        ],
+      ]),
     },
     {
       title: "The MET Explorer",
       subtitle: "Data Science",
       tech: ["Python", "Jupyter Notebook", "Tableau"],
-      links: ["github"],
+      links: new Map<string, string>([
+        ["website", "https://dh101metexploration.humspace.ucla.edu/"],
+      ]),
     },
     {
       title: "Code Connects",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
-      links: ["figma"],
+      links: new Map<string, string>([
+        [
+          "figma",
+          "https://www.figma.com/file/x9uSlKCqGt2z7yIVAuWQwq/CodeConnects-Student-Portal?type=design&mode=design&t=YPJclAjHmikwh1SZ-1",
+        ],
+      ]),
     },
     {
       title: "FLUX (Flipped UX)",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
-      links: ["figma"],
+      links: new Map<string, string>([["figma", "figma"]]),
     },
   ];
   return (
@@ -73,7 +89,7 @@ export default function Work() {
             subtitle=""
             tech={[""]}
             backgroundColor=""
-            links={[""]}
+            links={new Map<string, string>()}
           />
         </div>
       </div>

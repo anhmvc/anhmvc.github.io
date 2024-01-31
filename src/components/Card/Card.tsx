@@ -10,7 +10,7 @@ export default function Card(props: {
   subtitle: string;
   tech: Array<string>;
   backgroundColor: string;
-  links: Array<string>;
+  links: Map<string, string>;
 }) {
   return (
     <div
@@ -20,16 +20,37 @@ export default function Card(props: {
       <div className="title-container">
         <div>
           <h1 className="card-title">{props.title}</h1>
-          <h2 className="card-categories">{props.subtitle}</h2>
+          <h2 className="card-subtitle">{props.subtitle}</h2>
         </div>
         <div className="logo-container">
-          {props.links.includes("github") ? (
-            <img src={github} alt="github" />
+          {props.links.has("github") ? (
+            <a
+              href={props.links.get("github")}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={github} alt="github" className="logo" title="Github" />
+            </a>
           ) : null}
-          {props.links.includes("figma") ? (
-            <img src={figma} alt="figma" />
+          {props.links.has("figma") ? (
+            <a href={props.links.get("figma")} target="_blank" rel="noreferrer">
+              <img src={figma} alt="figma" className="logo" title="Figma" />
+            </a>
           ) : null}
-          <img src={arrowUp} alt="arrowUp" />
+          {props.links.has("website") ? (
+            <a
+              href={props.links.get("website")}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src={arrowUp}
+                alt="arrowUp"
+                className="logo"
+                title="Website"
+              />
+            </a>
+          ) : null}
         </div>
       </div>
       <div className="categories-container">
