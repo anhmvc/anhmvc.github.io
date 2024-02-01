@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb906a19.css",
+    "main.js": "/static/js/main.f42caa87.js",
+    "static/media/royce-hall.gif": "/static/media/royce-hall.c72a16eb09b5404907c2.gif",
+    "static/media/solar.gif": "/static/media/solar.6c88ea3f85c0039bf6fb.gif",
+    "static/media/flux.gif": "/static/media/flux.474931c61926fd71a1da.gif",
+    "static/media/met.png": "/static/media/met.14e7cfdb666d4b2c448f.png",
+    "static/media/twain.png": "/static/media/twain.fd7d1a226995c3a0587c.png",
+    "static/media/saru.png": "/static/media/saru.b8f81c5a692c0488d58b.png",
+    "static/media/me.png": "/static/media/me.347bfe9c901ae6915f68.png",
+    "static/media/code-connects.png": "/static/media/code-connects.b05d77bea5bf82eaf934.png",
+    "static/media/noise.png": "/static/media/noise.bd1c2fb4fb757dcbd0e8.png",
+    "static/media/AnhMac_Resume.pdf": "/static/media/AnhMac_Resume.650255cb99a0273ef7f8.pdf",
+    "static/media/close.svg": "/static/media/close.8bfa9d572dd529bda08db311fd8d91fa.svg",
+    "static/media/github.svg": "/static/media/github.de351fe8bffd865fdae4e9cf7e4a3914.svg",
+    "static/media/me-background.svg": "/static/media/me-background.6207a5a99ace6301796017ad3e3995d5.svg",
+    "static/media/open.svg": "/static/media/open.1338ad4506ca1422d8eadc3ada3192a9.svg",
+    "static/media/figma.svg": "/static/media/figma.a6b6db8e50f0266aa2d48a7432806e12.svg",
+    "static/media/right-circle.svg": "/static/media/right-circle.6e359d904761bb06003f05db710f08bc.svg",
+    "static/media/arrow-up.svg": "/static/media/arrow-up.a727c9663eeeace92d9c1da067a3b271.svg",
+    "static/media/left-circle.svg": "/static/media/left-circle.0349e8543e4b0c7a8ef5570dc13ebb82.svg",
+    "index.html": "/index.html",
+    "static/media/right-arc.svg": "/static/media/right-arc.fae2f559c3bc8063cd9dc52c1c0c265e.svg",
+    "main.cb906a19.css.map": "/static/css/main.cb906a19.css.map",
+    "main.f42caa87.js.map": "/static/js/main.f42caa87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb906a19.css",
+    "static/js/main.f42caa87.js"
+  ]
+}
