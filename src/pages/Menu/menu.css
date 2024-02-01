@@ -21,6 +21,7 @@
   font-weight: 700;
   line-height: normal;
   text-align: center;
+  text-decoration: none;
 }
 
 h2.links {
@@ -28,7 +29,6 @@ h2.links {
 }
 
 .links:hover {
-  color: white;
   cursor: pointer;
 }
 
