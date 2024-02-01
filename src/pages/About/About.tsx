@@ -21,12 +21,12 @@ export default function About() {
             </p>
             <p className="paragraph">
               I have experience in Web/Fullstack/Frontend development and
-              Product Design through my work experience and academic journey at
-              UCLA. I have dabbled in 3D modeling and graphic design here and
-              there. I'm constantly curious to learn more about new technologies
-              to explore how I can push creativity through coding. Past 5 PM, I
-              enjoy learning how to shuffle, doing home renovations in my{" "}
-              <s>rental</s> home, and going viral on the Internet.
+              Product Design through my work experience and treacherous journey in
+              obtaining a B.S. Computer Science at UCLA. I have dabbled in 3D modeling 
+              and graphic design here and there. I'm constantly curious to learn more 
+              about new technologies to explore how I can push creativity through 
+              coding. Past 5 PM, I enjoy learning how to shuffle, doing renovations 
+              in my <s>rental</s> home, and going viral on the Internet.
             </p>
             <div className="links">
               <a
