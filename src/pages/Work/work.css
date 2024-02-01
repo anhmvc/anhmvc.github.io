@@ -35,7 +35,7 @@
 }
 
 .project-image img {
-  animation: imageFadeIn 1s ease forwards;
+  /* animation: imageFadeIn 1s ease forwards; */
   object-fit: cover;
   width: 45%;
   height: 75%;
