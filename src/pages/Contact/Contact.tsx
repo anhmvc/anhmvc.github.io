@@ -26,6 +26,9 @@ export default function Contact() {
           >
             <h1>↗ linkedin</h1>
           </a>
+          <a href="https://github.com/anhmvc" target="_blank" rel="noreferrer">
+            <h1>↗ github</h1>
+          </a>
           <a
             href="https://www.instagram.com/anhmvc/"
             target="_blank"

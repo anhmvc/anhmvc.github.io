@@ -58,12 +58,26 @@ export default function Menu() {
             </Link>
             <div className="links-container">
               <div className="links">
-                <h2 className="links">linkedin</h2>
-                <img className="links" src={rightArc} alt="right-arrow" />
+                <a
+                  href="https://www.linkedin.com/in/anhmvc"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="links"
+                >
+                  <h2 className="links">linkedin</h2>
+                  <img className="links" src={rightArc} alt="right-arrow" />
+                </a>
               </div>
               <div className="links">
-                <h2 className="links">github</h2>
-                <img className="links" src={rightArc} alt="right-arrow" />
+                <a
+                  href="https://github.com/anhmvc"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="links"
+                >
+                  <h2 className="links">github</h2>
+                  <img className="links" src={rightArc} alt="right-arrow" />
+                </a>
               </div>
             </div>
           </div>
