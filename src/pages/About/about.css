@@ -58,6 +58,10 @@
     var(--Pink) 72.66%,
     var(--Yellow) 94.78%
   );
+  background-size: 200% 200%;
+  box-shadow: var(--box-shadow-light-inset);
+  animation: gradient 5s ease infinite;
+  -webkit-animation: gradient 5s ease infinite;
 }
 
 .image-me {
