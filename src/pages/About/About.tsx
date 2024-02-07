@@ -15,7 +15,7 @@ export default function About() {
             <p className="paragraph">
               Hi, I'm Anh Mac, pronounced <i>⋅æn mæk⋅</i>! Currently, I'm a
               Software Engineer, Site Reliability at Google by day and aspiring
-              TikTok influencer by night. I love all creative things, to which I
+              TikTok influencer by night. I love all things creative, to which I
               have found the most joy working on UI design and implementation to
               deliver an exquisite user experience in a product.
             </p>
