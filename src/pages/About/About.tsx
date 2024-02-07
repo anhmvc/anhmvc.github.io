@@ -22,8 +22,7 @@ export default function About() {
             <p className="paragraph">
               I have experience in Web/Fullstack/Frontend development and
               Product Design through my work experience and treacherous journey in
-              obtaining a B.S. Computer Science at UCLA. I have dabbled in 3D modeling 
-              and graphic design here and there. I'm constantly curious to learn more 
+              obtaining a B.S. Computer Science at UCLA. I'm constantly curious to learn more 
               about new technologies to explore how I can push creativity through 
               coding. Past 5 PM, I enjoy learning how to shuffle, doing renovations 
               in my <s>rental</s> home, and going viral on the Internet.

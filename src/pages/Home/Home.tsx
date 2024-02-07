@@ -26,7 +26,7 @@ export default function Home() {
           </h1>
         </div>
         <h2 className="intro">
-          I'M A SOFTWARE ENGINEER, UX/UI DESIGNER, AND GRAPHIC DESIGNER.
+          I'M A SOFTWARE ENGINEER, UX/UI DESIGNER, AND DIGITAL ARTIST.
         </h2>
       </div>
       <div className="intro-links">
