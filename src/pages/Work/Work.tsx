@@ -10,6 +10,8 @@ import saru from "../../static/images/saru.png";
 import solar from "../../static/images/solar.gif";
 import flux from "../../static/images/flux.gif";
 import code from "../../static/images/code-connects.png";
+import amazon from "../../static/images/amazon.gif";
+import penguin from "../../static/images/penguin.png";
 
 export default function Work() {
   const [isHover, setHover] = useState(false);
@@ -18,23 +20,31 @@ export default function Work() {
   const COLORS = ["Green", "Teal", "Purple", "Pink", "Yellow"];
   const PROJECTS = [
     {
+      title: "Keep Shopping For",
+      subtitle: "Full Stack Development, Front-End Development",
+      tech: ["Typescript", "React.js", "React Native", "API Development"],
+      links: new Map<string, string>([
+        ["website", "https://www.amazon.com/"],
+      ]),
+      img: amazon,
+    },
+    {
       title: "Royce Hall Simulator",
       subtitle: "Computer Graphics, 3D Modeling",
       tech: ["Javascript", "three.js", "Blender"],
-      backgroundColor: "Teal",
       links: new Map<string, string>([
         ["github", "https://github.com/anhmvc/royce-hall"],
         ["website", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
       ]),
       img: royce,
     },
-    // {
-    //   title: "Keep Shopping For",
-    //   subtitle: "Full Stack Development, Front-End Development",
-    //   tech: ["Typescript", "React.js", "React Native", "API Development"],
-    //   links: new Map<string, string>(["website","https://www.amazon.com"]),
-    //   img: "",
-    // },
+    {
+      title: "Mr. Penguin",
+      subtitle: "Computer Graphics, 3D Modeling, Animation",
+      tech: ["Blender"],
+      links: new Map<string, string>([]),
+      img: penguin,
+    },
     {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
@@ -58,7 +68,7 @@ export default function Work() {
     },
     {
       title: "The MET Explorer",
-      subtitle: "Data Science",
+      subtitle: "Data Science, Digital Humanities",
       tech: ["Python", "Jupyter Notebook", "Tableau"],
       links: new Map<string, string>([
         ["website", "https://dh101metexploration.humspace.ucla.edu/"],
