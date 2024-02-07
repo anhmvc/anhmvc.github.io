@@ -21,7 +21,7 @@ export default function Work() {
   const PROJECTS = [
     {
       title: "Keep Shopping For",
-      subtitle: "Full Stack Development, Front-End Development",
+      subtitle: "Full Stack Web/Mobile Development",
       tech: ["Typescript", "React.js", "React Native", "API Development"],
       links: new Map<string, string>([
         ["website", "https://www.amazon.com/"],
