@@ -39,8 +39,7 @@
   object-fit: cover;
   width: 45%;
   height: 75%;
-  right: 0;
-  bottom: 0;
+  right: -20px;
   border-radius: var(--border-radius);
 }
 
