@@ -1,33 +1,80 @@
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 100px;
-  width: 50%;
-  margin-top: 60px;
+@media only screen and (max-width: 480px) {
+  /* Small screens */
+  .title-container {
+    margin: 0;
+  }
+  
+  .work-title {
+    margin-top: 6rem;
+    margin-left: 4rem;
+    font-size: 2.5rem;
+  }
+
+  .projects {
+    margin-top: 10rem;
+  }
+
+  .cards-container {
+    margin: 0 2rem;
+    width: 100%;
+  }
+
+  .card-container {
+    top: 10rem;
+    margin-top: -4.5rem;
+  }
 }
 
-.card-container {
-  position: sticky;
-  top: 280px;
+@media only screen and (min-width: 481px) {
+  .work-title {
+    margin-top: 11.25rem;
+    margin-left: 6.25rem; 
+    font-size: 4.688rem;
+  }
+
+  .projects {
+    margin-top: 13.75rem;
+  }
+  
+  .cards-container {
+    margin-left: 6.25rem;
+    width: 50%;
+    margin-top: 4rem;
+  }
+
+  .card-container {
+    top: 18rem;
+    margin-top: -3rem;
+  }
+}
+
+.work-container {
+  display: flex;
 }
 
 .work-title {
   position: fixed;
-  margin-top: 180px;
-  margin-left: 100px;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+}
+
+.card-container {
+  position: sticky;
+}
+
+.card-container:first-child {
+  margin-top: 0;
 }
 
 .project-images-container {
   width: 50%;
 }
 
-.projects {
-  display: flex;
-  margin-top: 220px;
-}
-
 .project-image {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   max-width: 90%;
   height: 90vh;
   position: fixed;
@@ -39,7 +86,7 @@
   object-fit: cover;
   width: 45%;
   height: 75%;
-  right: -20px;
+  right: -1.25rem;
   border-radius: var(--border-radius);
 }
 

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./work.css";
 
 import { Card } from "../../components";
+import { isMobile } from 'react-device-detect';
 
 import royce from "../../static/images/royce-hall.gif";
 import twain from "../../static/images/twain.png";
@@ -116,8 +117,8 @@ export default function Work() {
   }
 
   return (
-    <div className="page-container">
-      <h1 className="title work-title">work</h1>
+    <div className="work-container">
+      <h1 className="work-title">work</h1>
       <div className="projects">
         <div className="cards-container">
           {PROJECTS.map((project, index) => {
@@ -148,7 +149,7 @@ export default function Work() {
             />
           </div>
         </div>
-        <div className="project-images-container">
+        {isMobile ? (null) : ( <div className="project-images-container">
           {isHover ? (
             <div className="project-image">
               <img
@@ -158,7 +159,7 @@ export default function Work() {
               />
             </div>
           ) : null}
-        </div>
+        </div>)}
       </div>
     </div>
   );
