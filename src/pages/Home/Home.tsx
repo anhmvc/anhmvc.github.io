@@ -4,15 +4,36 @@ import rightCircle from "../../static/icons/right-circle.svg";
 // import noise from "../../static/images/noise.png";
 import penguin from "../../static/images/penguin.mp4";
 import { Link } from "react-router-dom";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 export default function Home() {
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const videoTopRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.9;
+    if (videoTopRef.current) {
+      videoTopRef.current.playbackRate = 0.8;
+      videoTopRef.current.addEventListener("canplay", function () {
+        setTimeout(function () {
+          if (videoTopRef.current) {
+            videoTopRef.current.play();
+          }
+        }, 20);
+      });
     }
-  }, [videoRef]);
+  }, [videoTopRef]);
+
+  const videoBottomRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    if (videoBottomRef.current) {
+      videoBottomRef.current.playbackRate = 0.8;
+      videoBottomRef.current.addEventListener("canplay", function () {
+        setTimeout(function () {
+          if (videoBottomRef.current) {
+            videoBottomRef.current.play();
+          }
+        });
+      });
+    }
+  }, [videoBottomRef]);
 
   return (
     <div className="homepage-container">
@@ -47,9 +68,28 @@ export default function Home() {
           <img src={rightCircle} alt="right-arrow" />
         </div>
       </div>
-      <video ref={videoRef} autoPlay muted loop id="backgroundVideo">
-        <source src={penguin} type='video/mp4' />
-      </video>
+      <div className="video-container top-left">
+        <video
+          ref={videoTopRef}
+          muted
+          loop
+          preload="true"
+          className="background-video top-left"
+        >
+          <source src={penguin} type="video/mp4" />
+        </video>
+      </div>
+      <div className="video-container bottom-right">
+        <video
+          ref={videoBottomRef}
+          muted
+          loop
+          preload="true"
+          className="background-video bottom-right"
+        >
+          <source src={penguin} type="video/mp4" />
+        </video>
+      </div>
     </div>
   );
 }
