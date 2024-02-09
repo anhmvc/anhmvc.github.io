@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9bdbcc8.css",
-    "main.js": "/static/js/main.189238fe.js",
+    "main.css": "/static/css/main.aa49f5fa.css",
+    "main.js": "/static/js/main.e4360d77.js",
     "static/media/royce-hall.gif": "/static/media/royce-hall.c72a16eb09b5404907c2.gif",
     "static/media/solar.gif": "/static/media/solar.6c88ea3f85c0039bf6fb.gif",
     "static/media/flux.gif": "/static/media/flux.474931c61926fd71a1da.gif",
@@ -12,6 +12,7 @@
     "static/media/penguin.png": "/static/media/penguin.2bd97bae2181a0b64af7.png",
     "static/media/amazon.gif": "/static/media/amazon.b46150c2f56e97becb46.gif",
     "static/media/penguin.mp4": "/static/media/penguin.66115a679d707b0199c4.mp4",
+    "static/media/cl-studio.png": "/static/media/cl-studio.5bc6bbc5b4e9a30ef051.png",
     "static/media/me.png": "/static/media/me.347bfe9c901ae6915f68.png",
     "static/media/code-connects.png": "/static/media/code-connects.b05d77bea5bf82eaf934.png",
     "static/media/noise.png": "/static/media/noise.bd1c2fb4fb757dcbd0e8.png",
@@ -26,11 +27,11 @@
     "static/media/left-circle.svg": "/static/media/left-circle.0349e8543e4b0c7a8ef5570dc13ebb82.svg",
     "index.html": "/index.html",
     "static/media/right-arc.svg": "/static/media/right-arc.fae2f559c3bc8063cd9dc52c1c0c265e.svg",
-    "main.a9bdbcc8.css.map": "/static/css/main.a9bdbcc8.css.map",
-    "main.189238fe.js.map": "/static/js/main.189238fe.js.map"
+    "main.aa49f5fa.css.map": "/static/css/main.aa49f5fa.css.map",
+    "main.e4360d77.js.map": "/static/js/main.e4360d77.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9bdbcc8.css",
-    "static/js/main.189238fe.js"
+    "static/css/main.aa49f5fa.css",
+    "static/js/main.e4360d77.js"
   ]
 }
