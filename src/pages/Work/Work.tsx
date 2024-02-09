@@ -13,6 +13,7 @@ import flux from "../../static/images/flux.gif";
 import code from "../../static/images/code-connects.png";
 import amazon from "../../static/images/amazon.gif";
 import penguin from "../../static/images/penguin.png";
+import cl_studio from "../../static/images/cl-studio.png";
 
 export default function Work() {
   const [isHover, setHover] = useState(false);
@@ -68,6 +69,19 @@ export default function Work() {
       img: saru,
     },
     {
+      title: "FLUX (Flipped UX)",
+      subtitle: "UX/UI Design",
+      tech: ["Figma"],
+      links: new Map<string, string>([
+        [
+          "figma",
+          "https://www.figma.com/file/WDWXIQHBTCNcrm7Uw0qSjO/FLUX-(Flipped-UX)?type=design&node-id=0%3A1&mode=design&t=JdtEayZGqwAj2kxU-1",
+        ],
+        [ "website", "https://medium.com/creative-labs/demo-day-spring-2019-db8d4f62282#1782"],
+      ]),
+      img: flux,
+    },
+    {
       title: "The MET Explorer",
       subtitle: "Data Science, Digital Humanities",
       tech: ["Python", "Jupyter Notebook", "Tableau"],
@@ -75,6 +89,7 @@ export default function Work() {
         ["website", "https://dh101metexploration.humspace.ucla.edu/"],
       ]),
       img: met,
+      disabled: true,
     },
     {
       title: "Code Connects",
@@ -89,18 +104,6 @@ export default function Work() {
       img: code,
     },
     {
-      title: "FLUX (Flipped UX)",
-      subtitle: "UX/UI Design",
-      tech: ["Figma"],
-      links: new Map<string, string>([
-        [
-          "figma",
-          "https://www.figma.com/file/WDWXIQHBTCNcrm7Uw0qSjO/FLUX-(Flipped-UX)?type=design&node-id=0%3A1&mode=design&t=JdtEayZGqwAj2kxU-1",
-        ],
-      ]),
-      img: flux,
-    },
-    {
       title: "Solar System Simulation",
       subtitle: "Computer Graphics",
       tech: ["Javascript", "three.js"],
@@ -108,6 +111,15 @@ export default function Work() {
         ["github", "https://github.com/anhmvc/solar-system"],
       ]),
       img: solar,
+    },
+    {
+      title: "CL STUDIO",
+      subtitle: "Photography",
+      tech: ["Photoshop", "Lightroom"],
+      links: new Map<string, string>([
+        [ "website", "https://medium.com/creative-labs/demo-day-spring-2019-db8d4f62282#1a41"],
+      ]),
+      img: cl_studio,
     },
   ];
 
@@ -135,6 +147,7 @@ export default function Work() {
                   tech={project.tech}
                   backgroundColor={COLORS[index % 5]}
                   links={project.links}
+                  disabled={project.disabled ? project.disabled : false}
                 />
               </div>
             );

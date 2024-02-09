@@ -12,10 +12,11 @@ export default function Card(props: {
   tech: Array<string>;
   backgroundColor: string;
   links: Map<string, string>;
+  disabled?: Boolean;
 }) {
 
   const outlinksComponent = (
-    <div className="logo-container">
+    <div className={`logo-container ${props.disabled ? "disabled" : null}` }>
       {props.links.has("github") ? (
         <a
           href={props.links.get("github")}
@@ -64,6 +65,7 @@ export default function Card(props: {
             return <Pill name={name} />;
           })}
         </div>
+        {props.disabled ?  (<h3 className="error-message">‼️ Demo is currently down ☹️ Rescue team is OTW 👷🚒 ‼️</h3>) : (null)}
         {isMobile ? (outlinksComponent) : (null) }
       </div>
     </div>
