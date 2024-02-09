@@ -1,7 +1,19 @@
+@media only screen and (max-width: 480px) {
+  .control-button {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .control-button {
+    top: 3.125rem;
+    right: 3.125rem;
+  }
+}
+
 .control-button {
   position: fixed;
-  top: 50px;
-  right: 50px;
   filter: invert(99%) sepia(1%) saturate(4%) hue-rotate(329deg) brightness(107%)
     contrast(102%);
   z-index: 9999;
@@ -9,6 +21,10 @@
 
 .control-button:hover {
   cursor: pointer;
+}
+
+.inactive {
+  pointer-events: none;
 }
 
 .links {
@@ -91,7 +107,11 @@ h2.links {
   line-height: normal;
   text-align: center;
   text-decoration: none;
-  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000;
+  text-shadow:
+    1px 0 #000,
+    -1px 0 #000,
+    0 1px #000,
+    0 -1px #000;
 }
 
 .text-item:hover {
