@@ -1,17 +1,47 @@
+@media only screen and (max-width: 480px) {
+  /* Small screens */
+  .contact-title {
+    margin-top: 6rem;
+    text-align: center;
+  }
+
+  .mobile-contact {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .mobile-contact h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .mobile-contact h2, a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  /* Medium/Large screens */
+  .contact-title {
+    margin-top: 13.75rem;
+    margin-left: 6.25rem;
+  }
+}
+
 .contact-title {
-  margin-top: 220px;
-  margin-left: 100px;
   margin-bottom: 0;
 }
 
 .head-separator {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 0.75rem;
   margin-bottom: 0;
 }
 
 .contact-container {
-  padding: 30px 100px;
+  padding: 1.875rem 6.25rem;
   display: flex;
 }
 

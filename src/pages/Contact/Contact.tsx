@@ -1,5 +1,6 @@
 import "./contact.css";
 import noise from "../../static/images/noise.png";
+import { isMobile } from 'react-device-detect';
 
 export default function Contact() {
   return (
@@ -8,7 +9,34 @@ export default function Contact() {
         contact
       </h1>
       <hr className="head-separator"></hr>
-      <div className="contact-container">
+      {isMobile ?
+      (<div className="mobile-contact">
+        <h1>mail</h1>
+        <a href="mailto:anhmvc@g.ucla.edu" target="_blank" rel="noreferrer">
+            <h2>anhmvc@g.ucla.edu</h2>
+        </a>
+        <br></br>
+        <h1>social medias</h1>
+        <a
+            href="https://www.linkedin.com/in/anhmvc/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>↗ linkedin</h2>
+          </a>
+          <a href="https://github.com/anhmvc" target="_blank" rel="noreferrer">
+            <h2>↗ github</h2>
+          </a>
+          <a
+            href="https://www.instagram.com/anhmvc/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <h2>↗ instagram</h2>
+          </a>
+      </div>) 
+        :
+      (<div className="contact-container">
         <div className="contact-left">
           <h1>mail</h1>
           <br></br>
@@ -37,7 +65,7 @@ export default function Contact() {
             <h1>↗ instagram</h1>
           </a>
         </div>
-      </div>
+      </div>)}
       <div className="noise" style={{ backgroundImage: `url(${noise})` }}></div>
     </div>
   );
