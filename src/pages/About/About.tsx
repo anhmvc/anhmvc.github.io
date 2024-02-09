@@ -13,11 +13,12 @@ export default function About() {
             <h1 className="about-title">about</h1>
             <hr className="head-separator"></hr>
             <p className="paragraph">
-              Hi, I'm Anh Mac, pronounced <i>⋅æn mæk⋅</i>, and I'm based in San Francisco! 
-              Currently, I'm a Software Engineer, Site Reliability at Google by day and 
-              aspiring TikTok influencer by night. I love all things creative, to which 
-              I have found the most joy working on UI design and implementation to
-              deliver an exquisite user experience in a product.
+              Hi, I'm Anh Mac!
+              I'm a Software Engineer, Site Reliability at Google by day and 
+              aspiring TikTok influencer by night based in San Francisco. I love
+              all things creative, to which I have found the most joy working on
+              UI design and implementation to deliver an exquisite user
+              experience in a product.
             </p>
             <p className="paragraph">
               I have experience in Web/Fullstack/Frontend development and
