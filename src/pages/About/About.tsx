@@ -6,7 +6,7 @@ import resume from "../../static/AnhMac_Resume.pdf";
 
 export default function About() {
   return (
-    <div className="page-container about">
+    <div className="about-container">
       <div className="inner-container">
         <div className="about-left">
           <div className="about-text-container">
