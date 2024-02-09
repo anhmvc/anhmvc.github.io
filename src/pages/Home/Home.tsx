@@ -73,6 +73,7 @@ export default function Home() {
           ref={videoTopRef}
           muted
           loop
+          playsInline
           preload="true"
           className="background-video top-left"
         >
@@ -84,6 +85,7 @@ export default function Home() {
           ref={videoBottomRef}
           muted
           loop
+          playsInline
           preload="true"
           className="background-video bottom-right"
         >
