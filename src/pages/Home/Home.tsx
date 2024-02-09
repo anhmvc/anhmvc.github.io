@@ -46,13 +46,13 @@ export default function Home() {
             anh mac.
           </h1>
         </div>
-        <h2 className="intro">
+        <h2 className="intro" id="intro-description">
           I'M A SOFTWARE ENGINEER, UX/UI DESIGNER, AND DIGITAL ARTIST.
         </h2>
       </div>
       <div className="intro-links">
         <div className="intro-sublinks">
-          <img src={leftCircle} alt="left-arrow" />
+          <img className="arrow" src={leftCircle} alt="left-arrow" />
           <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
             <h3 className="intro">
               read <b>about</b> me
@@ -65,7 +65,7 @@ export default function Home() {
               see my <b>work</b>
             </h3>
           </Link>
-          <img src={rightCircle} alt="right-arrow" />
+          <img className="arrow" src={rightCircle} alt="right-arrow" />
         </div>
       </div>
       <div className="video-container top-left">
