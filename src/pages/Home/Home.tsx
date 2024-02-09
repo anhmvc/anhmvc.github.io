@@ -3,8 +3,10 @@ import leftCircle from "../../static/icons/left-circle.svg";
 import rightCircle from "../../static/icons/right-circle.svg";
 // import noise from "../../static/images/noise.png";
 import penguin from "../../static/images/penguin.mp4";
+import penguinGif from "../../static/images/penguin.gif";
 import { Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
+import { isMobile } from 'react-device-detect';
 
 export default function Home() {
   const videoTopRef = useRef<HTMLVideoElement>(null);
@@ -69,7 +71,11 @@ export default function Home() {
         </div>
       </div>
       <div className="video-container top-left">
-        <video
+        {isMobile ? (<img
+          className="background-video top-left"
+          src={penguinGif}
+          alt="background-penguin"
+        />) : (<video
           ref={videoTopRef}
           muted
           loop
@@ -78,10 +84,14 @@ export default function Home() {
           className="background-video top-left"
         >
           <source src={penguin} type="video/mp4" />
-        </video>
+        </video>)}
       </div>
       <div className="video-container bottom-right">
-        <video
+        {isMobile ? (<img
+          className="background-video bottom-right"
+          src={penguinGif}
+          alt="background-penguin"
+        />) : (<video
           ref={videoBottomRef}
           muted
           loop
@@ -90,7 +100,7 @@ export default function Home() {
           className="background-video bottom-right"
         >
           <source src={penguin} type="video/mp4" />
-        </video>
+        </video>)}
       </div>
     </div>
   );
