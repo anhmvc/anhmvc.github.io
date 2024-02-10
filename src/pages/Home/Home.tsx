@@ -49,7 +49,7 @@ export default function Home() {
         opacity: { duration: 2, ease: "easeIn" },
         x: { duration: 0.3, ease: "easeOut" },
       }}
-      exit={{ x: moveDirection > 0 ? "100%" : "-100%" }}
+      exit={{ x: moveDirection ? (moveDirection > 0 ? "100%" : "-100%") : "0" }}
       className="homepage-container"
     >
       <m.div className="intro-container">
