@@ -33,7 +33,7 @@ export default function Work() {
     {
       title: "Royce Hall Simulator",
       subtitle: "Computer Graphics, 3D Modeling",
-      tech: ["Javascript", "three.js", "Blender"],
+      tech: ["Javascript", "tiny-graphics.js", "Blender"],
       links: new Map<string, string>([
         ["github", "https://github.com/anhmvc/royce-hall"],
         ["website", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
