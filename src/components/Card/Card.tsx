@@ -5,7 +5,7 @@ import figma from "../../static/icons/figma.svg";
 import github from "../../static/icons/github.svg";
 import arrowUp from "../../static/icons/arrow-up.svg";
 import video from "../../static/icons/video.svg";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
 
 export default function Card(props: {
   title: string;
@@ -14,16 +14,13 @@ export default function Card(props: {
   backgroundColor: string;
   links: Map<string, string>;
   disabled?: Boolean;
+  description?: string;
+  expand?: Boolean;
 }) {
-
   const outlinksComponent = (
-    <div className={`logo-container ${props.disabled ? "disabled" : null}` }>
+    <div className={`logo-container ${props.disabled ? "disabled" : null}`}>
       {props.links.has("github") ? (
-        <a
-          href={props.links.get("github")}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={props.links.get("github")} target="_blank" rel="noreferrer">
           <img src={github} alt="github" className="logo" title="Github" />
         </a>
       ) : null}
@@ -33,38 +30,21 @@ export default function Card(props: {
         </a>
       ) : null}
       {props.links.has("demo") ? (
-        <a
-          href={props.links.get("demo")}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={video}
-            alt="Demo"
-            className="logo"
-            title="Demo"
-          />
+        <a href={props.links.get("demo")} target="_blank" rel="noreferrer">
+          <img src={video} alt="Demo" className="logo" title="Demo" />
         </a>
       ) : null}
       {props.links.has("website") ? (
-        <a
-          href={props.links.get("website")}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={arrowUp}
-            alt="arrowUp"
-            className="logo"
-            title="Website"
-          />
+        <a href={props.links.get("website")} target="_blank" rel="noreferrer">
+          <img src={arrowUp} alt="arrowUp" className="logo" title="Website" />
         </a>
       ) : null}
-    </div>);
-  
+    </div>
+  );
+
   return (
     <div
-      className="card"
+      className={`card ${props.expand ? "expand" : null}`}
       style={{ backgroundColor: `var(--${props.backgroundColor})` }}
     >
       <div className="title-container">
@@ -72,16 +52,23 @@ export default function Card(props: {
           <h1 className="card-title">{props.title}</h1>
           <h2 className="card-subtitle">{props.subtitle}</h2>
         </div>
-        {isMobile ? (null) : (outlinksComponent)}
+        {isMobile ? null : outlinksComponent}
       </div>
-      <div style={{ display: "flex", flexDirection: "column"}}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <div className="categories-container">
           {props.tech.map((name) => {
             return <Pill name={name} />;
           })}
         </div>
-        {props.disabled ?  (<h3 className="error-message">‼️ Demo is currently down ☹️ Rescue team is OTW 👷🚒 ‼️</h3>) : (null)}
-        {isMobile ? (outlinksComponent) : (null) }
+        {props.disabled ? (
+          <h3 className="error-message">
+            ‼️ Demo is currently down ☹️ Rescue team is OTW 👷🚒 ‼️
+          </h3>
+        ) : null}
+        {isMobile ? outlinksComponent : null}
+        {props.expand ? (
+          <p className="description">{props.description}</p>
+        ) : null}
       </div>
     </div>
   );

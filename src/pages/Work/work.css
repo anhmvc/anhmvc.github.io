@@ -3,7 +3,7 @@
   .title-container {
     margin: 0;
   }
-  
+
   .work-title {
     margin-top: 6rem;
     margin-left: 4rem;
@@ -28,16 +28,16 @@
 @media only screen and (min-width: 481px) {
   .work-title {
     margin-top: 11.25rem;
-    margin-left: 6.25rem; 
+    margin-left: 6.25vw;
     font-size: 4.688rem;
   }
 
   .projects {
     margin-top: 13.75rem;
   }
-  
+
   .cards-container {
-    margin-left: 6.25rem;
+    margin-left: 6.25vw;
     width: 50%;
     margin-top: 4rem;
   }
