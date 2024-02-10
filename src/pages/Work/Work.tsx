@@ -173,21 +173,20 @@ export default function Work() {
   }
 
   function handleClick(i: number) {
-    // if nothing is clicked
     if (!isClicked) {
+      // if nothing is clicked
       setClicked(true);
       setClickedItem(i);
-    }
-
-    // if clicked & same item is clicked
-    if (isClicked && clickedItem === i) {
-      setClicked(false);
-      setClickedItem(-1);
-    }
-
-    // if clicked & another item is clicked
-    if (isClicked && clickedItem !== i) {
-      setClickedItem(i);
+    } else {
+      // if clicked
+      if (clickedItem === i) {
+        // same item is clicked
+        setClicked(false);
+        setClickedItem(-1);
+      } else {
+        // different item is clicked
+        setClickedItem(i);
+      }
     }
   }
 
@@ -237,13 +236,18 @@ export default function Work() {
         {isMobile ? null : (
           <div className="project-images-container">
             {isHover ? (
-              <div className="project-image">
+              <m.div
+                className="project-image"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.5, ease: "easeIn" }}
+              >
                 <img
                   className="project-image"
                   src={PROJECTS[hoverItem].img}
                   alt={PROJECTS[hoverItem].title}
                 />
-              </div>
+              </m.div>
             ) : null}
           </div>
         )}
