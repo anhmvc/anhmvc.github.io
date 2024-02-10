@@ -36,7 +36,8 @@ export default function Work() {
       tech: ["Javascript", "tiny-graphics.js", "Blender"],
       links: new Map<string, string>([
         ["github", "https://github.com/anhmvc/royce-hall"],
-        ["website", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
+        ["demo", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
+        ["website", "https://anhm.vc/royce-hall"],
       ]),
       img: royce,
     },

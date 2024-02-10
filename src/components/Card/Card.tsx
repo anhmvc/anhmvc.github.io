@@ -4,6 +4,7 @@ import { Pill } from "../";
 import figma from "../../static/icons/figma.svg";
 import github from "../../static/icons/github.svg";
 import arrowUp from "../../static/icons/arrow-up.svg";
+import video from "../../static/icons/video.svg";
 import { isMobile } from 'react-device-detect';
 
 export default function Card(props: {
@@ -29,6 +30,20 @@ export default function Card(props: {
       {props.links.has("figma") ? (
         <a href={props.links.get("figma")} target="_blank" rel="noreferrer">
           <img src={figma} alt="figma" className="logo" title="Figma" />
+        </a>
+      ) : null}
+      {props.links.has("demo") ? (
+        <a
+          href={props.links.get("demo")}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src={video}
+            alt="Demo"
+            className="logo"
+            title="Demo"
+          />
         </a>
       ) : null}
       {props.links.has("website") ? (
