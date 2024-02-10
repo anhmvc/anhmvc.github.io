@@ -37,7 +37,7 @@ export default function Work() {
       links: new Map<string, string>([["website", "https://www.amazon.com/"]]),
       img: amazon,
       description:
-        "A full-stack feature implemented using Typescript (Web), React Native (Mobile) frontend, and Java backend. The feature is live on the Amazon mobile app and website!",
+        "A full-stack feature implemented using Typescript(Web)/React Native(Mobile) frontend and Java backend. The feature is live on the Amazon mobile app and website!",
     },
     {
       title: "Mr. Penguin",
@@ -53,7 +53,13 @@ export default function Work() {
     {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
-      tech: ["Javascript", "React.js", "Web Development", "API Development"],
+      tech: [
+        "Javascript",
+        "React.js",
+        "Node.js",
+        "Web Development",
+        "API Development",
+      ],
       links: new Map<string, string>([
         ["github", "https://github.com/ucladevx/twain-extension"],
       ]),
@@ -72,12 +78,12 @@ export default function Work() {
       ]),
       img: royce,
       description:
-        "A realistic model of Royce Hall, a landmark at UCLA in changing seasons and weather built using OpenGL and tinygraphics.js library. Modeled the 3D-objects from scratch using Blender. Worked with a team of 4 to implement the idea, utilizing Scene Graphs and Collision Detection to animate objects and particles in the scene.",
+        "A realistic model of Royce Hall, a landmark at UCLA, in changing seasons and weather built using OpenGL and tinygraphics.js library. Modeled the 3D-objects from scratch using Blender. Worked with a team of 4 to implement the idea, utilizing Scene Graphs and Collision Detection to animate objects and particles in the scene.",
     },
     {
       title: "Saru Recycling",
       subtitle: "Web/Mobile Development, UX/UI Design",
-      tech: ["Javascript", "React.js", "React Native", "Firebase", "Figma"],
+      tech: ["Javascript", "React.js", "React Native", "MongoDB", "Figma"],
       links: new Map<string, string>([
         [
           "figma",
@@ -116,7 +122,7 @@ export default function Work() {
       img: met,
       disabled: true,
       description:
-        "A Digital Humanities project that analyzes the diversity, identity, and cultural sustainability of the Met collection using a dataset of the objects at the Met provided by Open Access. Collaborated with a team of 6 to research and write the narrative, told through data visualizations. Designed and implemented the entirety of the website.",
+        "A Digital Humanities project that analyzes the diversity, identity, and cultural sustainability of the Met collection using a dataset of the objects at the Met provided by Open Access. Collaborated with a team of 6 to research and write the narrative, told through data visualizations.",
     },
     {
       title: "Code Connects",
@@ -131,7 +137,7 @@ export default function Work() {
       ]),
       img: code,
       description:
-        "A web application where students can access lesson plans, homeworks, and class resources for CodeConnects - an organization that provides 1:1 coding lessons and mentorship for middle and high school students. Designed the wireframes and style guides for the student portal from the ground up.",
+        "A web application where students can access lesson plans, homeworks, and class resources for CodeConnects, an organization that provides 1:1 coding lessons and mentorship for middle and high school students. Designed the wireframes and style guides for the student portal from the ground up.",
     },
     {
       title: "Solar System Simulation",
