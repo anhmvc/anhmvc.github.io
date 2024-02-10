@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
+import {
+  createHashRouter,
+  RouterProvider,
+  useLocation,
+  useOutlet,
+} from "react-router-dom";
 import { About, Contact, ErrorPage, Home, Menu, Work } from "./pages";
+import { AnimatePresence } from "framer-motion";
 
 const router = createHashRouter([
   {
@@ -30,11 +36,23 @@ const router = createHashRouter([
   },
 ]);
 
+const AnimatedOutlet: React.FC = () => {
+  const o = useOutlet();
+  const [outlet] = useState(o);
+
+  return <>{outlet}</>;
+};
+
 function MenuWrapper() {
+  const location = useLocation();
   return (
     <div>
       <Menu />
-      <Outlet />
+      <AnimatePresence>
+        <div key={location.pathname}>
+          <AnimatedOutlet />
+        </div>
+      </AnimatePresence>
     </div>
   );
 }

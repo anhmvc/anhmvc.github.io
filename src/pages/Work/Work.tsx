@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./work.css";
 
 import { Card } from "../../components";
-import { isMobile } from 'react-device-detect';
+import { isMobile } from "react-device-detect";
+import { motion as m } from "framer-motion";
 
 import royce from "../../static/images/royce-hall.gif";
 import twain from "../../static/images/twain.png";
@@ -25,21 +26,8 @@ export default function Work() {
       title: "Keep Shopping For",
       subtitle: "Full Stack Web/Mobile Development",
       tech: ["Typescript", "React.js", "React Native", "API Development"],
-      links: new Map<string, string>([
-        ["website", "https://www.amazon.com/"],
-      ]),
+      links: new Map<string, string>([["website", "https://www.amazon.com/"]]),
       img: amazon,
-    },
-    {
-      title: "Royce Hall Simulator",
-      subtitle: "Computer Graphics, 3D Modeling",
-      tech: ["Javascript", "tiny-graphics.js", "Blender"],
-      links: new Map<string, string>([
-        ["github", "https://github.com/anhmvc/royce-hall"],
-        ["demo", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
-        ["website", "https://anhm.vc/royce-hall"],
-      ]),
-      img: royce,
     },
     {
       title: "Mr. Penguin",
@@ -56,6 +44,17 @@ export default function Work() {
         ["github", "https://github.com/ucladevx/twain-extension"],
       ]),
       img: twain,
+    },
+    {
+      title: "Royce Hall Simulator",
+      subtitle: "Computer Graphics, 3D Modeling",
+      tech: ["Javascript", "tiny-graphics.js", "Blender"],
+      links: new Map<string, string>([
+        ["github", "https://github.com/anhmvc/royce-hall"],
+        ["demo", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
+        ["website", "https://anhm.vc/royce-hall"],
+      ]),
+      img: royce,
     },
     {
       title: "Saru Recycling",
@@ -78,7 +77,10 @@ export default function Work() {
           "figma",
           "https://www.figma.com/file/WDWXIQHBTCNcrm7Uw0qSjO/FLUX-(Flipped-UX)?type=design&node-id=0%3A1&mode=design&t=JdtEayZGqwAj2kxU-1",
         ],
-        [ "website", "https://medium.com/creative-labs/demo-day-spring-2019-db8d4f62282#1782"],
+        [
+          "website",
+          "https://medium.com/creative-labs/demo-day-spring-2019-db8d4f62282#1782",
+        ],
       ]),
       img: flux,
     },
@@ -118,7 +120,10 @@ export default function Work() {
       subtitle: "Photography",
       tech: ["Photoshop", "Lightroom"],
       links: new Map<string, string>([
-        [ "website", "https://medium.com/creative-labs/demo-day-spring-2019-db8d4f62282#1a41"],
+        [
+          "website",
+          "https://medium.com/creative-labs/demo-day-spring-2019-db8d4f62282#1a41",
+        ],
       ]),
       img: cl_studio,
     },
@@ -130,7 +135,12 @@ export default function Work() {
   }
 
   return (
-    <div className="work-container">
+    <m.div
+      className="work-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, ease: "easeIn" }}
+    >
       <h1 className="work-title">work</h1>
       <div className="projects">
         <div className="cards-container">
@@ -163,18 +173,20 @@ export default function Work() {
             />
           </div>
         </div>
-        {isMobile ? (null) : ( <div className="project-images-container">
-          {isHover ? (
-            <div className="project-image">
-              <img
-                className="project-image"
-                src={PROJECTS[hoverItem].img}
-                alt={PROJECTS[hoverItem].title}
-              />
-            </div>
-          ) : null}
-        </div>)}
+        {isMobile ? null : (
+          <div className="project-images-container">
+            {isHover ? (
+              <div className="project-image">
+                <img
+                  className="project-image"
+                  src={PROJECTS[hoverItem].img}
+                  alt={PROJECTS[hoverItem].title}
+                />
+              </div>
+            ) : null}
+          </div>
+        )}
       </div>
-    </div>
+    </m.div>
   );
 }

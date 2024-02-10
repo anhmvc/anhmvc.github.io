@@ -3,30 +3,36 @@ import rightArc from "../../static/icons/right-arc.svg";
 import meVector from "../../static/images/me-background.svg";
 import me from "../../static/images/me.png";
 import resume from "../../static/AnhMac_Resume.pdf";
+import { motion as m } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="about-container">
+    <m.div
+      className="about-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, ease: "easeIn" }}
+    >
       <div className="inner-container">
         <div className="about-left">
           <div className="about-text-container">
             <h1 className="about-title">about</h1>
             <hr className="head-separator"></hr>
             <p className="paragraph">
-              Hi, I'm Anh Mac!
-              I'm a Software Engineer, Site Reliability at Google by day and 
-              aspiring TikTok influencer by night based in San Francisco. I love
-              all things creative, to which I have found the most joy working on
-              UI design and implementation to deliver an exquisite user
-              experience in a product.
+              Hi, I'm Anh Mac! I'm a Software Engineer, Site Reliability at
+              Google by day and aspiring TikTok influencer by night based in San
+              Francisco. I love all things creative, to which I have found the
+              most joy working on UI design and implementation to deliver an
+              exquisite user experience in a product.
             </p>
             <p className="paragraph">
               I have experience in Web/Fullstack/Frontend development and
-              Product Design through my work experience and treacherous journey in
-              obtaining a B.S. Computer Science at UCLA. I'm constantly curious to learn more 
-              about new technologies to explore how I can push creativity through 
-              coding. Past 5 PM, I enjoy learning how to shuffle, doing renovations 
-              in my <s>rental</s> home, and going viral on the Internet.
+              Product Design through my work experience and treacherous journey
+              in obtaining a B.S. Computer Science at UCLA. I'm constantly
+              curious to learn more about new technologies to explore how I can
+              push creativity through coding. Past 5 PM, I enjoy learning how to
+              shuffle, doing renovations in my <s>rental</s> home, and going
+              viral on the Internet.
             </p>
             <div className="links">
               <a
@@ -51,6 +57,6 @@ export default function About() {
           <img src={me} alt="profile" className="image-me" />
         </div>
       </div>
-    </div>
+    </m.div>
   );
 }
