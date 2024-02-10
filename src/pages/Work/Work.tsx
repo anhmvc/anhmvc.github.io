@@ -109,9 +109,10 @@ export default function Work() {
     {
       title: "Solar System Simulation",
       subtitle: "Computer Graphics",
-      tech: ["Javascript", "three.js"],
+      tech: ["Javascript", "tiny-graphics.js"],
       links: new Map<string, string>([
         ["github", "https://github.com/anhmvc/solar-system"],
+        ["website", "https://anhm.vc/solar-system"],
       ]),
       img: solar,
     },
