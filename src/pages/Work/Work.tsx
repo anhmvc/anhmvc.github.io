@@ -89,7 +89,7 @@ export default function Work() {
     },
     {
       title: "Saru Recycling",
-      subtitle: "Web/Mobile Development, UX/UI Design",
+      subtitle: "Web/Mobile Development, UX/UI Design, Project Management",
       tech: ["Javascript", "React.js", "React Native", "MongoDB", "Figma"],
       links: new Map<string, string>([
         [
