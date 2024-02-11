@@ -17,6 +17,7 @@ import penguin from "../../static/images/penguin.png";
 import cl_studio from "../../static/images/cl-studio.png";
 import face from "../../static/images/facial-recognition.png";
 import digit from "../../static/images/digit-recognizer.png";
+import beagle from "../../static/images/beaglebone.jpeg";
 
 export default function Work() {
   const [isHover, setHover] = useState(false);
@@ -42,17 +43,6 @@ export default function Work() {
         "A full-stack feature implemented using Typescript(Web)/React Native(Mobile) frontend and Java backend. The feature is live on the Amazon mobile app and website!",
     },
     {
-      title: "Mr. Penguin",
-      subtitle: "Computer Graphics, 3D Modeling, Animation",
-      tech: ["Blender"],
-      links: new Map<string, string>([
-        ["website", "https://www.tiktok.com/@mrpenguin.official"],
-      ]),
-      img: penguin,
-      description:
-        "A 3D object modeled after my favorite Penguin plushie that is showcase in this portfolio, created and animated using Blender. You can check him out at https://www.tiktok.com/@mrpenguin.official!",
-    },
-    {
       title: "Twain",
       subtitle: "Chrome Web Extension, Full Stack Development",
       tech: [
@@ -72,7 +62,7 @@ export default function Work() {
     {
       title: "Facial Recognition",
       subtitle: "ML",
-      tech: ["Python", "Colab", "Jupyter Notebooks"],
+      tech: ["Python", "SciPy", "NumPy", "Colab", "Jupyter Notebooks"],
       links: new Map<string, string>([
         [
           "website",
@@ -86,7 +76,7 @@ export default function Work() {
     {
       title: "Digit Recognizer",
       subtitle: "ML",
-      tech: ["Python", "PyTorch", "TensorFlow", "Colab", "Jupyter Notebooks"],
+      tech: ["Python", "PyTorch", "NumPy", "Colab", "Jupyter Notebooks"],
       links: new Map<string, string>([
         [
           "website",
@@ -96,19 +86,6 @@ export default function Work() {
       img: digit,
       description:
         "A ML model using PyTorch Neural Networks to perform digit recognizing on a training dataset of pairs of 300 28x28 images displayed as binary vectors and corresponding digit labels. ",
-    },
-    {
-      title: "Royce Hall Simulator",
-      subtitle: "Computer Graphics, 3D Modeling",
-      tech: ["Javascript", "tiny-graphics.js", "Blender"],
-      links: new Map<string, string>([
-        ["github", "https://github.com/anhmvc/royce-hall"],
-        ["demo", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
-        ["website", "https://anhm.vc/royce-hall"],
-      ]),
-      img: royce,
-      description:
-        "A realistic model of Royce Hall, a landmark at UCLA, in changing seasons and weather built using OpenGL and tinygraphics.js library. Modeled the 3D-objects from scratch using Blender. Worked with a team of 4 to implement the idea, utilizing Scene Graphs and Collision Detection to animate objects and particles in the scene.",
     },
     {
       title: "Saru Recycling",
@@ -123,6 +100,30 @@ export default function Work() {
       img: saru,
       description:
         "A project for Saru Recyling, a student startup at UCR. Led a team of 4 to developed a React web app and a React Native mobile app that allow the firm to measure bin telemetry and for customers to interact with smart recycling bins.",
+    },
+    {
+      title: "IoT: Temperature Reporting App",
+      subtitle: "Embedded Systems",
+      tech: ["C", "BeagleBone"],
+      links: new Map<string, string>([
+        ["website", "https://github.com/anhmvc/CS111/tree/master/Lab4B"],
+      ]),
+      img: beagle,
+      description:
+        "A C embedded application that runs on a Beaglebone, which reads data from external temperature sensors and logs the results to the CLI.",
+    },
+    {
+      title: "Royce Hall Simulator",
+      subtitle: "Computer Graphics, 3D Modeling",
+      tech: ["Javascript", "tiny-graphics.js", "Blender"],
+      links: new Map<string, string>([
+        ["github", "https://github.com/anhmvc/royce-hall"],
+        ["demo", "https://www.youtube.com/watch?v=nm2oY81tV9s"],
+        ["website", "https://anhm.vc/royce-hall"],
+      ]),
+      img: royce,
+      description:
+        "A realistic model of Royce Hall, a landmark at UCLA, in changing seasons and weather built using OpenGL and tinygraphics.js library. Modeled the 3D-objects from scratch using Blender. Worked with a team of 4 to implement the idea, utilizing Scene Graphs and Collision Detection to animate objects and particles in the scene.",
     },
     {
       title: "FLUX (Flipped UX)",
@@ -145,7 +146,7 @@ export default function Work() {
     {
       title: "The MET Explorer",
       subtitle: "Data Science, Digital Humanities",
-      tech: ["Python", "Jupyter Notebook", "Tableau"],
+      tech: ["Python", "Jupyter Notebook", "Tableau", "Data Visualizations"],
       links: new Map<string, string>([
         ["website", "https://dh101metexploration.humspace.ucla.edu/"],
       ]),
@@ -155,7 +156,7 @@ export default function Work() {
         "A Digital Humanities project that analyzes the diversity, identity, and cultural sustainability of the Met collection using a dataset of the objects at the Met provided by Open Access. Collaborated with a team of 6 to research and write the narrative, told through data visualizations.",
     },
     {
-      title: "Code Connects",
+      title: "CodeConnects",
       subtitle: "UX/UI Design",
       tech: ["Figma"],
       links: new Map<string, string>([
@@ -180,6 +181,17 @@ export default function Work() {
       img: solar,
       description:
         "A model of the solar system with planets styled by leveraging various shading techniques of Computer Graphics. The camera can attach to a planet in the scene's matrix to follow the movement of the object.",
+    },
+    {
+      title: "Mr. Penguin",
+      subtitle: "Computer Graphics, 3D Modeling, Animation",
+      tech: ["Blender"],
+      links: new Map<string, string>([
+        ["website", "https://www.tiktok.com/@mrpenguin.official"],
+      ]),
+      img: penguin,
+      description:
+        "A 3D object modeled after my favorite Penguin plushie that is showcase in this portfolio, created and animated using Blender. You can check him out at https://www.tiktok.com/@mrpenguin.official!",
     },
     {
       title: "CL STUDIO",
