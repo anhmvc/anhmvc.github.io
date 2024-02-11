@@ -19,20 +19,34 @@ export default function About() {
             <h1 className="about-title">about</h1>
             <hr className="head-separator"></hr>
             <p className="paragraph">
-              Hi, I'm Anh Mac! I'm a Software Engineer, Site Reliability at
-              Google by day and aspiring TikTok influencer by night based in San
-              Francisco. I love all things creative, to which I have found the
-              most joy working on UI design and implementation to deliver an
-              exquisite user experience in a product.
+              Hi, I'm Anh Mac! I'm a{" "}
+              <strong>Software Engineer, Site Reliability @ Google</strong> by
+              day and aspiring TikTok influencer by night based in{" "}
+              <strong>San Francisco</strong>. I love all things creative, to
+              which I have found the most joy working on UI design and
+              implementation to deliver an exquisite user experience in a
+              product. I am interested in exploring work involving new{" "}
+              <strong>Generative AI</strong> technologies and{" "}
+              <strong>LLMs</strong> to enhance a product for our everyday use.
             </p>
             <p className="paragraph">
-              I have experience in Web/Fullstack/Frontend development and
-              Product Design through my work experience and treacherous journey
-              in obtaining a B.S. Computer Science at UCLA. I'm constantly
+              I have experience in generalist Software Engineering, with
+              strength in <strong>Full Stack Web/Mobile</strong> development,
+              and <strong>Product Design</strong> (as a plus!) through my work
+              experience and treacherous journey in obtaining a{" "}
+              <strong>B.S. in Computer Science @ UCLA</strong>. I'm constantly
               curious to learn more about new technologies to explore how I can
               push creativity through coding. Past 5 PM, I enjoy learning how to
               shuffle, doing renovations in my <s>rental</s> home, and going
               viral on the Internet.
+            </p>
+            <p className="paragraph">
+              <strong>PROGRAMMING LANGUAGES:</strong> Javascript, Typescript,
+              Python, Java, C/C++, Golang
+              <br></br>
+              <strong>TECHNOLOGIES:</strong> React.js, React Native, Node.js,
+              Express.js, Colab/Jupyter Notebooks, Django, Dash, Pandas, NumPy,
+              SQL, MongoDB, Docker, Angular, Figma
             </p>
             <div className="links">
               <a

@@ -15,6 +15,8 @@ import code from "../../static/images/code-connects.png";
 import amazon from "../../static/images/amazon.gif";
 import penguin from "../../static/images/penguin.png";
 import cl_studio from "../../static/images/cl-studio.png";
+import face from "../../static/images/facial-recognition.png";
+import digit from "../../static/images/digit-recognizer.png";
 
 export default function Work() {
   const [isHover, setHover] = useState(false);
@@ -66,6 +68,34 @@ export default function Work() {
       img: twain,
       description:
         "A smart scheduling Chrome extension, built in React, that helps users optimize their to-do list by planning tasks around existing events in their Google Calendar. Implemented additional endpoints and extended existing API to handle 'Edit' function when a Task is changed.",
+    },
+    {
+      title: "Facial Recognition",
+      subtitle: "ML",
+      tech: ["Python", "Colab", "Jupyter Notebooks"],
+      links: new Map<string, string>([
+        [
+          "website",
+          "https://colab.sandbox.google.com/drive/1zpO_kXDggX-W52WVoelO_GFHxDfr0m6I?usp=sharing",
+        ],
+      ]),
+      img: face,
+      description:
+        "A ML model using PCA, k-means/k-medoids clustering methods to perform facial recognition on a dataset of 1867 images of 19 different people.",
+    },
+    {
+      title: "Digit Recognizer",
+      subtitle: "ML",
+      tech: ["Python", "PyTorch", "TensorFlow", "Colab", "Jupyter Notebooks"],
+      links: new Map<string, string>([
+        [
+          "website",
+          "https://colab.research.google.com/drive/1RdVh0qq_m_wi8AwTckK_XyO-7SQxVdXr?usp=sharing",
+        ],
+      ]),
+      img: digit,
+      description:
+        "A ML model using PyTorch Neural Networks to perform digit recognizing on a training dataset of pairs of 300 28x28 images displayed as binary vectors and corresponding digit labels. ",
     },
     {
       title: "Royce Hall Simulator",
