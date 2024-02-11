@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.517372b4.css",
-    "main.js": "/static/js/main.3b1b6937.js",
+    "main.js": "/static/js/main.821bfcd1.js",
     "static/media/royce-hall.gif": "/static/media/royce-hall.c72a16eb09b5404907c2.gif",
     "static/media/solar.gif": "/static/media/solar.6c88ea3f85c0039bf6fb.gif",
     "static/media/flux.gif": "/static/media/flux.474931c61926fd71a1da.gif",
@@ -15,8 +15,9 @@
     "static/media/cl-studio.png": "/static/media/cl-studio.5bc6bbc5b4e9a30ef051.png",
     "static/media/me.png": "/static/media/me.347bfe9c901ae6915f68.png",
     "static/media/code-connects.png": "/static/media/code-connects.b05d77bea5bf82eaf934.png",
+    "static/media/AnhMac_Resume.pdf": "/static/media/AnhMac_Resume.66fe49ab22857029c0ec.pdf",
     "static/media/noise.png": "/static/media/noise.bd1c2fb4fb757dcbd0e8.png",
-    "static/media/AnhMac_Resume.pdf": "/static/media/AnhMac_Resume.839271fd6024bf2abd24.pdf",
+    "static/media/digit-recognizer.png": "/static/media/digit-recognizer.08c3c0672d01a0991a3d.png",
     "static/media/close.svg": "/static/media/close.8bfa9d572dd529bda08db311fd8d91fa.svg",
     "static/media/github.svg": "/static/media/github.de351fe8bffd865fdae4e9cf7e4a3914.svg",
     "static/media/me-background.svg": "/static/media/me-background.6207a5a99ace6301796017ad3e3995d5.svg",
@@ -29,10 +30,10 @@
     "static/media/video.svg": "/static/media/video.90677db44879ce2d35f6a236090d7cba.svg",
     "static/media/right-arc.svg": "/static/media/right-arc.fae2f559c3bc8063cd9dc52c1c0c265e.svg",
     "main.517372b4.css.map": "/static/css/main.517372b4.css.map",
-    "main.3b1b6937.js.map": "/static/js/main.3b1b6937.js.map"
+    "main.821bfcd1.js.map": "/static/js/main.821bfcd1.js.map"
   },
   "entrypoints": [
     "static/css/main.517372b4.css",
-    "static/js/main.3b1b6937.js"
+    "static/js/main.821bfcd1.js"
   ]
 }
