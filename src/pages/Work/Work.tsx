@@ -71,7 +71,7 @@ export default function Work() {
       ]),
       img: face,
       description:
-        "A ML model using PCA, k-means/k-medoids clustering methods to perform facial recognition on a dataset of 1867 images of 19 different people.",
+        "An ML model using PCA, k-means/k-medoids clustering methods to perform facial recognition on a dataset of 1867 images of 19 different people.",
     },
     {
       title: "Digit Recognizer",
@@ -85,7 +85,7 @@ export default function Work() {
       ]),
       img: digit,
       description:
-        "A ML model using PyTorch Neural Networks to perform digit recognizing on a training dataset of pairs of 300 28x28 images displayed as binary vectors and corresponding digit labels. ",
+        "An ML model using PyTorch Neural Networks to perform digit recognition on a training dataset of 300 pairs of 28x28 images displayed as binary vectors and corresponding digit labels.",
     },
     {
       title: "Saru Recycling",
@@ -96,6 +96,7 @@ export default function Work() {
           "figma",
           "https://www.figma.com/file/acMKWyawN9na4h0QR50ljS/Saru-Web-Development?type=design&node-id=0%3A1&mode=design&t=YPJclAjHmikwh1SZ-1",
         ],
+        ["website", "https://www.sarurecycling.com/"],
       ]),
       img: saru,
       description:
@@ -106,7 +107,7 @@ export default function Work() {
       subtitle: "Embedded Systems",
       tech: ["C", "BeagleBone"],
       links: new Map<string, string>([
-        ["website", "https://github.com/anhmvc/CS111/tree/master/Lab4B"],
+        ["github", "https://github.com/anhmvc/CS111/tree/master/Lab4B"],
       ]),
       img: beagle,
       description:
