@@ -55,7 +55,7 @@ export default function About() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2 className="links">resume</h2>
+                <h2 className="links">résumé</h2>
                 <img className="links" src={rightArc} alt="right-arrow" />
               </a>
             </div>
